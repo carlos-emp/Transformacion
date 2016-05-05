@@ -1,0 +1,40 @@
+<div class="page-content program-container" ng-controller="programController">
+  <div class="search-box">
+    <table>
+      <tbody>
+        <tr>
+          <td class="program-title mdl-data-table__cell--non-numeric">
+            <i class="material-icons input-icon main">search</i>
+          </td>
+          <td>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" id="sample3"></input>
+              <label class="mdl-textfield__label" for="sample3">Search...</label>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <table class="mdl-data-table mdl-js-data-table  mdl-shadow--2dp table">
+    <thead>
+      <tr>
+        <th class="mdl-data-table__cell--non-numeric">Program</th>
+
+        <th>Unit price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="program in programas | filter:searchProgram">
+        <td class="program-title mdl-data-table__cell--non-numeric">{{program.nombre}}</td>
+        <td class="price">{{program.costo}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button class="fab mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored" ng-click="showForm()">
+    <i class="material-icons">add</i>
+  </button>
+
+
+</div>

@@ -1,0 +1,75 @@
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+/*================================================= Contenedor principal ============================================================*/
+
+
+.mdl-layout__content{
+
+}
+
+/*========================================================= Contenedor Programas ===================================================================*/
+.program-container{
+  margin-bottom: 50px;
+  margin-top:50px;
+}
+/*================================================= Botón Flotante ============================================================*/
+
+.fab{
+  position:fixed;
+  bottom:5px;
+  left:calc(50% - 20px);
+}
+
+
+/*============================================ Search Box ============================================================*/
+
+.input-icon{
+  display: inline-block;
+}
+
+.input-icon-text{
+  display: inline-block;
+}
+
+.search-box{
+  position: fixed;
+  z-index:20;
+  top:50px;
+  left: calc(50% - 160px);
+  background: #fff;
+  height: 55px;
+}
+/*.mdl-textfield--expandable{
+padding:15px 0;
+}*/
+
+/*==================================================== Tablas ============================================================*/
+
+.table{
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.price{
+  width: 100px;
+  text-align: left !important;
+}
+
+.program-title{
+  width: calc(100% - 100px);
+}
+
+
+/*=================================================== Colores =====================================================*/
+
+.main{
+  color:#3F51B5;
+}
+
+.negro{
+  color:#000;
+}
