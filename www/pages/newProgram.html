@@ -1,4 +1,12 @@
-<div class="page-content program-container" ng-controller="programController">
+<div class="container" ng-controller="programController">
+<div class="form-container">
+  <input class="input-text" type="text" placeholder="Program Title">
+  <input class="input-text" type="text" placeholder="Area Of Interest">
+  <input class="input-text" type="text" placeholder="Duration in Days"  pattern="-?[0-9]*(\.[0-9]+)?">
+</div>
 
-:v
+
+  <button class="fab mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored" ng-click="showForm()">
+    <i class="material-icons">done</i>
+  </button>
 </div>

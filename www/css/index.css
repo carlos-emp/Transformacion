@@ -10,10 +10,17 @@ html,body{
 
 }
 
+.container{
+  padding:10px;
+}
+
 /*========================================================= Contenedor Programas ===================================================================*/
 .program-container{
   margin-bottom: 50px;
   margin-top:50px;
+}
+.form-container{
+  margin-bottom: 50px;
 }
 /*================================================= Botón Flotante ============================================================*/
 
@@ -37,10 +44,12 @@ html,body{
 .search-box{
   position: fixed;
   z-index:20;
-  top:50px;
+  top:70px;
   left: calc(50% - 160px);
   background: #fff;
-  height: 55px;
+  height: 40px;
+  width: 100%;
+
 }
 /*.mdl-textfield--expandable{
 padding:15px 0;
@@ -72,4 +81,20 @@ padding:15px 0;
 
 .negro{
   color:#000;
+}
+
+/*====================================================== Input =====================================================*/
+
+.input-text{
+  height: 30px;
+  border:none;
+  padding:0;
+  margin:0;
+  width: 100% !important;
+  border-bottom: solid 1px #d9d9d9;
+  min-width: 280px;
+  margin-bottom:15px;
+}
+.input-text:hover{
+  border-bottom: solid 1px #3F51B5;
 }

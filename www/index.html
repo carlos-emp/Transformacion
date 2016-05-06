@@ -8,9 +8,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="css/index.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js" ></script>
-
-
+  <script src="js/lib/angular.min.js"></script>
+  
   <script src="js/lib/material.min.js"></script>
   <script src="js/index.js"></script>
   <script src="js/controllers/main.js"></script>
@@ -27,6 +26,10 @@
         <span class="mdl-layout-title">{{titulo}}</span>
         <!-- Add spacer, to align navigation to the right -->
         <div class="mdl-layout-spacer"></div>
+
+        <button class="mdl-button mdl-js-button mdl-button--icon" ng-if="page==newProgramPage">
+          <i class="material-icons">arrow_back</i>
+        </button>
 
         <!-- Navigation. We hide it in small screens. -->
         <!-- <nav class="mdl-navigation mdl-layout--large-screen-only">
@@ -47,7 +50,7 @@
     </nav>
   </div>
   <main class="mdl-layout__content">
-  <div ng-include="page"></div>
+    <div class="page-content" ng-include="page"></div>
   </main>
 
 </div>
